@@ -1,0 +1,264 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+@import url('https://fonts.googleapis.com/css?family=Chewy');
+@font-face {
+	font-family: 'FonteLogo';
+	src: url("../_fonts/bubblegum-sans-regular.otf");
+}
+@font-face {
+	font-family: 'FonteLogo1';
+	src: url("../_fonts/Friday13SH.ttf");
+}
+@font-face {
+	font-family: 'FonteLogo2';
+	src: url("../_fonts/DoubleFeature20.ttf");
+}
+				p{
+					text-align: justify;
+					text-indent: 50px;
+					color: #ffffff;
+				}
+				a{
+					color: #ffffff;
+					text-decoration: none;
+				}
+				a:hover{
+					text-decoration: underline;
+                    color: red;
+                    transition: 1s;
+				}
+				h1{
+					text-align: justify;
+				}
+				h2{
+					text-align: justify;
+					color: #FFFFF0;
+				}
+				body {
+					font-family: Arial;
+					background: url("light-background-hd-desktop-wallpaper-high-definition-mobile.jpg") fixed;
+				}
+				div#interface {
+					width: 1000px;
+					margin: -20px auto 0px auto;
+					box-shadow: 0px 0px 30px black;
+					padding: 10px;
+				}
+				header#cabecalho img#icone{
+					position: absolute;
+					left: 1050px;
+					top: 50px;
+				}
+				header#cabecalho{
+					border-bottom: 1px #606060 solid;
+					height:150px;
+					background: url("../_imagens/Google_Glass_logo.png") no-repeat 0px 75px;
+				}
+				header#cabecalho h1{
+					font-family: 'FonteLogo';
+					font-size: 30pt;
+					color: darkred;
+					text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+					padding:0px;
+					margin-bottom: 0px;
+				}
+				header#cabecalho h2{
+					font-family: 'Titillium Web', sans-serif;
+					color: #888888;
+					font-size: 15pt;
+					padding:0px;
+					margin-top: 0px;
+				}
+/* Formatação de imagens com legendas */
+figure.foto-legenda{
+	position: relative;
+	border: 8px solid white;
+	box-shadow:  1px 1px 4px black;
+	background-color: white;
+}
+figure.foto-legenda img{
+	width: 100%;
+	height: 100%;
+}
+figure.foto-legenda figcaption{
+	position: absolute;
+	opacity: 0;
+	top: 0px;
+	background-color: rgba(0,0,0,0.4);
+	color: white;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	transition: opacity 1s;
+}
+figure.foto-legenda:hover figcaption{
+	opacity: 1;
+}
+
+/*Formatação do Menu*/
+nav#menu {
+	display: block;
+}
+nav#menu ul{
+	list-style: none;
+	text-transform: uppercase;
+	position: absolute;
+	top: -20px;
+	left: 530px;
+	font-family:'FonteLogo2';
+	font-size: 20pt;
+}
+nav#menu li {
+	display: inline-block;
+	padding: 10px;
+	margin: 2px;
+}
+nav#menu h1{
+	display: none;
+}
+nav#menu a {
+	color: #606060;
+	text-decoration: none;
+}
+nav#menu a:hover{
+	color: #B22222;
+	text-decoration: underline;
+	transition: .5s;
+}
+section#corpo{
+	display: block;
+	width: 520px;
+	float: left;
+	border-right: 1px solid #606060;
+	padding-right:15px ;
+}
+section#noticia-principal h2{
+	font-size: 12pt;
+	color: #606060;
+	background-color: #dddddd;
+	padding: 5px 0px 5px 10px;
+	margin:10px 0px 10px 0px;
+}
+header#cabecalho-artigo h1{
+	font-family: 'FonteLogo1';
+	font-size: 20pt;
+	color: #AB4B0C;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+header#cabecalho-artigo h2{
+	font-family: 'FonteLogo1';
+	font-size: 13pt;
+	color: #AB4B0C;
+	margin:0px;
+}
+.media{
+	display: block;
+	position: relative;
+	top:-63px;
+	left:130px;
+	font-size: 14pt;
+}
+.invoc{
+	display: block;
+	position: relative;
+	top:110px;
+}
+header#cabecalho-artigo h3{
+	font-family: 'FonteLogo1';
+	font-size: 12pt;
+	color: #800000;
+	text-align: left;
+}
+aside#texto p{
+	margin-left: 5px;
+}
+aside#lateral{
+	display: block;
+	width:415px;
+	float: right;
+	padding-top: 15px;
+	margin-top: -10px;
+}
+aside#lateral h1{
+	font-family: 'FonteLogo';
+	font-size: 20pt;
+	color: #606060;
+	margin-top: 0px;
+}
+aside#lateral h2{
+	font-size: 13pt;
+	color: #ffffff;
+	padding: 5px;
+	margin-left: 5px;
+}
+/*rodapé*/
+footer#rodape{
+	clear: both;
+	border-top: 1px solid #606060;
+}
+footer#rodape p{
+	text-align: center;
+    padding: 5px 0px 5px 0px;
+    top: -1px;
+}
+/*tabelas*/
+table#spec {
+	border:1px solid #000000;
+	border-spacing: 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+table#spec td {
+	border:1px solid #000000;
+	padding: 10px;
+	text-align: left;
+}
+table#spec td.esquerda {
+	text-align: right;
+	vertical-align: top;
+	color: #ffffff;
+	background-color: #606060;
+	font-weight: bold;
+}
+table#spec td.direita{
+	background-color: #cecece;
+}
+table#spec caption {
+	color: #888888;
+	font-size: 13pt;
+	font-weight: bolder;
+}
+table#spec caption span {
+	display: block;
+	float: right;
+	color: #000000;
+	font-size: 8pt;
+	margin-top: 10px;
+}
+/*Videos index */
+video#filme{
+	display: block;
+	position: relative;
+	width: 400px;
+}
+video#filme01{
+	display: block;
+	position: relative;
+	left:5px;
+	top:100px;
+	width: 400px;
+}
+video#filme02{
+	display: block;
+	position: relative;
+	width: 440px;
+	height: 350px;
+	top:-40px;
+	left:90px;
+}
+.borda{
+    box-shadow: 0px 0px 30px red;
+    padding: 5px;
+    color:bisque;
+}
